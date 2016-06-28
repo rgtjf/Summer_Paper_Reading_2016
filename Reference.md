@@ -8,7 +8,7 @@
 
 ## ML
 - ICML 
-- AAAI
+- AAAI 2016 http://www.aaai.org/Conferences/AAAI/2016/aaai16accepted-papers.pdf
 - NIPS
 - IJCAI
 - CIKM, ICDE, UAI, SIGIR, KDD
