@@ -4,4 +4,15 @@
 
 
 ## [1-NIPS15-Google-Pointer Network.pdf](http://papers.nips.cc/paper/5866-pointer-networks.pdf)
+- Abstract
+  - Overview:
+  - Advantage:
+  - Disadvantage:
+  - What can I do? / Can I employ its idea?
+- Experiments
+  - DataSet:
+  - Toolkit:
+  - Baseline:
+  - Result:
+
 
