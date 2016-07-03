@@ -17,12 +17,10 @@ eg: 0-ACL16-Ng-Paper_title.pdf
   - Result:
 
 ### 2-ACL16-Addressing Limited Data for Textual Entailment Across Domains
-
-    [PDF](https://arxiv.org/pdf/1606.02638v1.pdf),[!Bib](~)
+  [PDF](https://arxiv.org/pdf/1606.02638v1.pdf),[!Bib](~)
 
 ### 3-ACL16-Stanford-A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
-
-    [PDF](https://arxiv.org/abs/1606.02858), [!Bib](~)
+  [PDF](https://arxiv.org/abs/1606.02858), [!Bib](~)
 
 
 ### 4-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
