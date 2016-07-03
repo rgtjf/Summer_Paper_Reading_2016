@@ -3,7 +3,6 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 
 
 ### 1-NIPS15-Google-Pointer Network
-
   [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
     
 - Abstract
