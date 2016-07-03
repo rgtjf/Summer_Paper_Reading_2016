@@ -16,7 +16,7 @@ eg: 0-ACL16-Ng-Paper_title.pdf
   - Baseline:
   - Result:
 
-### 2-ACL16-Addressing Limited Data for Textual Entailment Across Domains
+### 2-ACL16-IBM-Addressing Limited Data for Textual Entailment Across Domains
   [PDF](https://arxiv.org/pdf/1606.02638v1.pdf),[!Bib](~)
 
 ### 3-ACL16-Stanford-A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
