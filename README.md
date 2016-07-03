@@ -15,4 +15,8 @@ eg: 0-ACL16-Ng-Paper_title.pdf
   - Baseline:
   - Result:
 
+### [2-ACL16-Addressing Limited Data for Textual Entailment Across Domains](https://arxiv.org/pdf/1606.02638v1.pdf), 
+[!Bib](~)
+
+
 
