@@ -1,10 +1,5 @@
 # Summer_Paper_Reading_2016
 eg: 0-ACL16-Ng-Paper_title.pdf
-
-
-### 1-NIPS15-Google-Pointer Network
-  [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
-    
 - Abstract
   - Overview:
   - Advantage:
@@ -15,6 +10,11 @@ eg: 0-ACL16-Ng-Paper_title.pdf
   - Toolkit:
   - Baseline:
   - Result:
+
+### 1-NIPS15-Google-Pointer Network
+  [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
+  - Abstract 
+
 
 ### 2-ACL16-IBM-Addressing Limited Data for Textual Entailment Across Domains
   [PDF](https://arxiv.org/pdf/1606.02638v1.pdf),[!Bib](~)
