@@ -82,10 +82,14 @@ that a bullet point usually summaries one or several aspects of the article. **I
 of the artticle. It should be able to infer the missing entity in the bullet point.**
 
 　　two supervised systems are implemented -- a conventional entity centric classfier and an end to end neural network.
-Expriment shows that the straight-forward NLP system, compared with origin frame-semantic parser([^1])
+Expriment shows that the straight-forward NLP system, compared with origin frame-semantic parser[^1], obtain accuracies
+of 72.4% and 75.8％ on these two datasetｓ.
 
+　　Besides, the author **extracts 100 examples to analysis the results**. She roughly classify the examples into 6 categories, 
+i.e., Exact Match, Paraphrase, Parial clue, Multiple sent, (Coref.Error, Hard), the last two is hard for human to obtain
+the correct answer.
 
-[^1]: Teaching Machine to 
+[^1]: Teaching Machine to read and comprehend, NIPS15, Hermann et.al
   
 ### 4-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
