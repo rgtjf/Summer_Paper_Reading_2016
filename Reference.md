@@ -9,7 +9,7 @@
 ## ML
 - ICML 2016 http://icml.cc/2016/?page_id=1649
 - AAAI 2016 http://www.aaai.org/Conferences/AAAI/2016/aaai16accepted-papers.pdf
-- NIPS
+- NIPS ~2015 http://papers.nips.cc/
 - IJCAI 2016 http://ijcai-16.org/index.php/welcome/view/accepted_papers
 - CIKM, ICDE, UAI, SIGIR, KDD
 

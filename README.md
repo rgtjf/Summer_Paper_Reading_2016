@@ -60,13 +60,41 @@ detail and convincing.
 
 ### 3-ACL16-Stanford-A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
   [PDF](https://arxiv.org/abs/1606.02858),
-  [!Bib](~)
+  [!Bib](~),
+  [!Github](https://github.com/danqi/rc-cnn-dailymail)
+
+  - [**Problem**] CNN/Daily Mail Reading Comprehension Task
+  - [**Model**] 
+  	- Traditional Features
+  	  - Feature ablation analysis  
+  	- Attention Neural Network(followed 5-NIPS15-NYU-End-To-End Memory Networks)
+  - [**Related Dataset**]
+    - CNN/Daily Mail (2015)
+    - MCTest（2013）
+    - Children Book Test （2016）
+    - bAbI （2016）
+  - [**Data Analysis**] breakdown of the Examples, Analysis the perfomance on each categories(although on small dataset).
+  - [**Remark**] Also we can construct traditional ML and NN, **data analysis is important**, without this, Experiment
+  seems to be inconvincing.
+
+　　This paper conducts a thorougn examination of CNN/Daily Mail Reading Comprehension Task, which origin from the idea 
+that a bullet point usually summaries one or several aspects of the article. **If the computer understands the content
+of the artticle. It should be able to infer the missing entity in the bullet point.**
+
+　　two supervised systems are implemented -- a conventional entity centric classfier and an end to end neural network.
+Expriment shows that the straight-forward NLP system, compared with origin frame-semantic parser([^1])
 
 
+[^1]: Teaching Machine to 
+  
 ### 4-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
   [!Bib](~)
 
+### 5-NIPS15-NYU-End-To-End Memory Networks
+  [PDF](http://papers.nips.cc/paper/5846-end-to-end-memory-networks), 
+  [Bib](http://papers.nips.cc/paper/5846-end-to-end-memory-networks/bibtex),
+  [Code](https://github.com/npow/MemN2N)
 
 # Other Papers:
 
