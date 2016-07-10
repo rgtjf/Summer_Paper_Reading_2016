@@ -106,6 +106,9 @@ the correct answer.
   - [**Problem-Experiment**] 
     - a). synthetic question answering (Reading Comprehension Task)
     - b). Language Model
+  - [**Dataset**]
+    - a).bAbI
+    - b).Penn Tree Bank & Text8
   - [**Model**] <br/>
     **Notation**:
 	- input: sentences: $$x_1, x_2, \ldot, x_i$$, question: q
@@ -119,10 +122,7 @@ the correct answer.
     - Random Noise: to reqularize T_A, randomly add 10% of empty memories to the stories.
     - The capacity of memory is restricted to the most recent 50 sentences.
     - **Since the number of sentences and the number of words per sentence varied between problems, a null symbol(all 
-    zero) was used to pad them all to a fixed size**  
-  - [**Dataset**]
-    - a).bAbI
-    - b).Penn Tree Bank & Text8
+    zero) was used to pad them all to a fixed size**
   - [**Remarks**]
     - **How to write a new Model with not the state-of-art performance**?
       - incuction previous model to this model (LSTM, Attention, ...)
