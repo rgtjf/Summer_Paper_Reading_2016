@@ -1,4 +1,6 @@
 # Summer\_Paper\_Reading_2016
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 eg: 0-ACL16-Ng-Paper_title.pdf
 
 - Abstract
@@ -98,7 +100,28 @@ the correct answer.
 ### 5-NIPS15-NYU-End-To-End Memory Networks
   [PDF](http://papers.nips.cc/paper/5846-end-to-end-memory-networks), 
   [Bib](http://papers.nips.cc/paper/5846-end-to-end-memory-networks/bibtex),
-  [Code](https://github.com/npow/MemN2N)
+  [Theano](https://github.com/npow/MemN2N),
+  [Tensorflow](https://github.com/seominjoon/memnn-tensorflow)
+  
+  - [**Goal**] introdce a **neural network** with a **recurrent attention** over a possibly large ***external memory***. 
+  - [**Problem-Experiment**] 
+    - a). synthetic question answering (Reading Comprehension Task)
+    - b). Language Model
+  - [**Model**] <br/>
+    **Notation**:
+	- input: $$x_1, x_2$$
+	- df
+
+   ![End-To-End Memory Networks](/figs/5a.png)
+  - [**Dataset**]
+    - a).bAbI
+    - b).Penn Tree Bank & Text8
+
+### 6-NIPS15-DeepMind-Teaching Machines to Read and Comprehend 
+  [PDF](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend),
+  [Bib](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend/bibtex),
+  [Tensorflow](https://github.com/carpedm20/attentive-reader-tensorflow)
+
 
 # Other Papers:
 
