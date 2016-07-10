@@ -1,6 +1,4 @@
 # Summer\_Paper\_Reading_2016
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 eg: 0-ACL16-Ng-Paper_title.pdf
 
 - Abstract
@@ -109,14 +107,50 @@ the correct answer.
     - b). Language Model
   - [**Model**] <br/>
     **Notation**:
-	- input: $$x_1, x_2$$
-	- df
-
-   ![End-To-End Memory Networks](/figs/5a.png)
+	- input: sentences: $$x_1, x_2, \ldot, x_i$$, question: q
+	- output: answer:a
+	- Variable: A, B, C, W
+	- $$ shape(x_i) = d; shape(A) = (d, V); shape(m_i) = d; shape(input) = (len(sentences), d) $$
+      ![End-To-End Memory Networks](/figs/5a.png)
+    - Sentence Representation: BoW & **Position Encoding** (slightly different from BoW, add position information), 
+      $$ m_i = \sum_{j}Ax_{ij} $$  
+    - Temporal Encoding: QA tasks require some notion of temporal context, $$ m_i = \sum_{j}Ax_{ij} + T_{A}(i)$$ 
+    - Random Noise: to reqularize T_A, randomly add 10% of empty memories to the stories.
+    - The capacity of memory is restricted to the most recent 50 sentences.
+    - **Since the number of sentences and the number of words per sentence varied between problems, a null symbol(all 
+    zero) was used to pad them all to a fixed size**  
   - [**Dataset**]
     - a).bAbI
     - b).Penn Tree Bank & Text8
+  - [**Remarks**]
+    - **How to write a new Model with not the state-of-art performance**?
+      - incuction previous model to this model (LSTM, Attention, ...)
+      - Compare with other related model (where is the difference?)
+      - How can the model changes?
+      - What can the model apply?
+    - **Related Works** deserves to be learned. 
+    - **Code** deserves to be implenment by myself.
+   
+　　This Paper introduce a neural nerwork with a recurrent attention model over a possibly large external memory.
 
+　　**The memory in RNNs model is the state of the network, which is latent and inherently unstable over long timescales. 
+The LSTM-based Model address this through local memory cells which lock in the network from the past. This model differs
+from these in that it uses a global memory, with shared read and write functions.**    
+    
+　　This model also related to attention mechanism in Banhadnau's work[^1], although Banhadnau's work[^1] is only over a
+single sentence rather than many.
+
+　　This approach is compettive with Memory Networks, but with less supervision.
+
+Next is quoted from yanranli's blog. The summary deserves me to leaned. you can refer to [here](http://yanran.li/peppypapers/2016/01/09/nips-2015-deep-learning-symposium-part-ii.html) for
+more details. 
+   > And the authors attempt several ways in this paper to fulfill their goal. 
+   > First, the single-layer or multi-layer, and then the transformation of feature space. 
+   > If one separate the output of the end-to-end memory networks, they can be parallized with typical RNN. 
+   > The output comprises of two parts, internal ouptut and external output, 
+   > which can be parallized to RNN’s memory and predicted label, respectively.
+
+[^1]: Neural machine translation by jointly learning to align and translate. ICLR15, Bahdanau, Cho, and Bengio
 ### 6-NIPS15-DeepMind-Teaching Machines to Read and Comprehend 
   [PDF](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend),
   [Bib](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend/bibtex),
