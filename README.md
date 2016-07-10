@@ -90,10 +90,11 @@ i.e., Exact Match, Paraphrase, Parial clue, Multiple sent, (Coref.Error, Hard), 
 the correct answer.
 
 [^1]: Teaching Machine to read and comprehend, NIPS15, Hermann et.al
-  
-### 4-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
-  [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
-  [!Bib](~)
+
+### 4-NAACL16-CMU-Hierarchical Attention Networks for Document Classification
+  [PDF](http://aclweb.org/anthology/N/N16/N16-1174.pdf),
+  [Bib](http://aclweb.org/anthology/N/N16/N16-1174.bib)
+
 
 ### 5-NIPS15-NYU-End-To-End Memory Networks
   [PDF](http://papers.nips.cc/paper/5846-end-to-end-memory-networks), 
@@ -151,10 +152,18 @@ more details.
    > which can be parallized to RNN’s memory and predicted label, respectively.
 
 [^1]: Neural machine translation by jointly learning to align and translate. ICLR15, Bahdanau, Cho, and Bengio
-### 6-NIPS15-DeepMind-Teaching Machines to Read and Comprehend 
+
+
+### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
+  [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
+  [!Bib](~)
+
+### TD2-NIPS15-DeepMind-Teaching Machines to Read and Comprehend 
   [PDF](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend),
   [Bib](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend/bibtex),
   [Tensorflow](https://github.com/carpedm20/attentive-reader-tensorflow)
+
+
 
 
 # Other Papers:
@@ -169,3 +178,25 @@ more details.
   
   LSTM Visual Analysis
 
+## NAACL
+A Neural Network-Based Abstract Generation Method to Opinion Summarization
+
+Bayesian Supervised Domain Adaptation for Short Text Similarity
+
+Clustering Paraphrases by Word Sense
+
+Convolutional Neural Networks vs. Convolution Kernels: Feature Engineering for Question Answering
+
+DAG-structured Recurent Neural Networks for Semantic Compositionality
+
+Deep LSTM based Feature Mapping for Query Classification
+
+Dependency Based Embeddings for Sentence Classification Tasks
+
+Dependency Sensitive Convolutional Neural Networks for Modeling Sentences and Documents
+
+<del> Hierarchical Attention Networks for Document Classification
+
+Learning Distributed Representations of Sentences from Unlabelled Data
+
+Pairwise Word Interaction Modeling with Neural Networks for Semantic Similarity Measurement
