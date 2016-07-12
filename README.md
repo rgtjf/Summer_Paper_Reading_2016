@@ -173,6 +173,11 @@ more details.
 [^1]: Neural machine translation by jointly learning to align and translate. ICLR15, Bahdanau, Cho, and Bengio
 
 
+### 6-NAACL16-Sultan-Bayesian Supervised Domain Adaptation for Short Text Similarity
+  [PDF](http://www.aclweb.org/anthology/N/N16/N16-1107.pdf), 
+  [Bib](http://www.aclweb.org/anthology/N/N16/N16-1107.bib)
+	
+
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
   [!Bib](~)
@@ -200,7 +205,7 @@ more details.
 ## NAACL
 A Neural Network-Based Abstract Generation Method to Opinion Summarization
 
-Bayesian Supervised Domain Adaptation for Short Text Similarity
+<del> Bayesian Supervised Domain Adaptation for Short Text Similarity
 
 Clustering Paraphrases by Word Sense
 

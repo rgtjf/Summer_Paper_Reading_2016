@@ -31,3 +31,15 @@ year = {2015},
 publisher = {Curran Associates, Inc.},
 url = {http://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend.pdf}
 }
+
+@InProceedings{sultan-boydgraber-sumner:2016:N16-1,
+  author    = {Sultan, Md Arafat  and  Boyd-Graber, Jordan  and  Sumner, Tamara},
+  title     = {Bayesian Supervised Domain Adaptation for Short Text Similarity},
+  booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2016},
+  address   = {San Diego, California},
+  publisher = {Association for Computational Linguistics},
+  pages     = {927--936},
+  url       = {http://www.aclweb.org/anthology/N16-1107}
+}
