@@ -12,6 +12,8 @@ eg: 0-ACL16-Ng-Paper_title.pdf
   - Baseline:
   - Result:
 
+[TOC]
+
 ### 1-NIPS15-Google-Pointer Network
   [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), 
   [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
@@ -95,6 +97,23 @@ the correct answer.
   [PDF](http://aclweb.org/anthology/N/N16/N16-1174.pdf),
   [Bib](http://aclweb.org/anthology/N/N16/N16-1174.bib)
 
+  - [**Goal**] Hierarchical Attention Networks for Document Classification
+  - [**Problem**]
+  	- a). Sentiment Estimation
+	  	- Data Set: Yelp reviews, IMDB reviews, Amazon reviews
+  	- b). Topic Classification
+  		- Data Set: Yahoo answers
+  - [**Model**]
+  
+  	![Hierarchical Attention Networks](/figs/4a.png)
+ 
+    - (i)  it has a hierarchical structure that mirrors the hierarchical structure of documents; 
+    - (ii) it has two levels of attention mechanisms applied at the word and sentence-level, enabling it to attend 
+    differentially to more and less important content when constructing the document representation
+    - The context vector u_w can be seen as a high level representation of a fixed query “what is the informative word” 
+    over the words like that used in memory networks (Sukhbaatar et al., 2015; Kumar et al., 2015).
+  - [**Remark**]
+    - **Modification of Model**: Hierarchical + Attention
 
 ### 5-NIPS15-NYU-End-To-End Memory Networks
   [PDF](http://papers.nips.cc/paper/5846-end-to-end-memory-networks), 
