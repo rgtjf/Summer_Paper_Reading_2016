@@ -198,8 +198,32 @@ more details.
   [PDF](http://www.ccs.neu.edu/home/luwang/papers/NAACL2016.pdf),
   [Bib](http://www.ccs.neu.edu/home/luwang/papers/NAACL2016.bib)
   
-
-
+  **Excellent work, clear structure, read it more times**
+  - [**Problem**] Abstract generation for opinioons and arguments
+  - [**Model Step-by-step**]
+     - Data Collection, the dataset can be found [here](http://www.ccs.neu.edu/home/luwang): 
+       - movie reviews, from www.rottentomatoes.com
+       - arguments on contraoversial topics, from idebate.org
+     - Step1: **Problem Formulation**, the ... task is defined to as finding y, which is the most likely sequence of word... such that: formulation
+     - Step2: **Decoder**, LSTM model for long range dependencies.
+     - Step3: **Encoder**, Bi-LSTM + Attention, Attention is userd to know how likely the input word is to be used to generate the next word in summary.
+     - Step4: **Attention Over Multiple Inputs**: It depends on task.
+     - Step5: **Importance Estimation to sub-sampling from the input**: because there are two problems with this approach. Firstly, the model is sensitive to the order of text units (a paragraph); Secondly, time cost too much.
+     - Step6: **Post-processing**: re-rank the n-best summaries; it is directly related to the final goal.
+   - [**Experiment:anwser the question from model**]
+     - Question1: How is the performance of component? -- Importance Estimation Evaluation(Step5)
+     - Question2: What is the model performance for automatic summary?
+     - Question3: What is the model performance according to human?
+     - Question4: What is the hyper-parameter K in sub-sampling effect? (Step5)
+     - Question5: Is the post-processing needed? (Step6)
+     
+     This work comes from deepmind, it presented a neural approach to generate abstractive summaries for opinionated text. Attention-based method is employed to find salient inormation from different input text generate an informative and concise summary. To cope with the large number of input text, an importance-based sampling mechanism is deployed for training.
+     
+     This work applies the attention model to abstract generation. I think the motivation to build this model is to employ attention over different input text (different task may have different question to solve, different model to modify, haha)  
+     
+     
+    
+     
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
   [!Bib](~)
