@@ -121,7 +121,7 @@ the correct answer.
   [Theano](https://github.com/npow/MemN2N),
   [Tensorflow](https://github.com/seominjoon/memnn-tensorflow)
   
-  - [**Goal**] introdce a **neural network** with a **recurrent attention** over a possibly large ***external memory***. 
+  - [**Goal**] introdce a **neural network** with a **recurrent attention** over a possibly large **external memory**. 
   - [**Problem-Experiment**] 
     - a). synthetic question answering (Reading Comprehension Task)
     - b). Language Model
@@ -176,7 +176,29 @@ more details.
 ### 6-NAACL16-Sultan-Bayesian Supervised Domain Adaptation for Short Text Similarity
   [PDF](http://www.aclweb.org/anthology/N/N16/N16-1107.pdf), 
   [Bib](http://www.aclweb.org/anthology/N/N16/N16-1107.bib)
+
+  - [**Problem**] Domain Adaptation for Short Text Similarity
+  - [**Model**]  A two-level hierachical Bayesian model -- Each $w_d$ depends not on its domain-specific observations
+  (first level) but also on information derived from the global, shared parameter $w*$ (second level). And the 
+  hierarchical structure (1) jointly learns global, task-level and domain-level feature weights, (2) retaining the 
+  distinction between in-domain and out-of-domain annotations.
+  - [**Features**]
+    - monolingual word aligner
+    - cosine similarity from 400-dimensional embedding(Baroni et.al, 2014)
+  - [**Experiment**]
+    - a). Short Text Similarity(STS), 10 domains
+    - b). Short Answer Scoring(SAS), Dataset: Mohler et al., 2011
+    - c). Answer Sentence Ranking(ASR), Dataset: Wang et al., 2007, TREC8-13
+  - [**Remarks**]
+    - 	Although this is traditional feature method, and the results is not inspiring, the author construt **amount of 
+    Analysis** to show the advantage of the system and answer why it does not perform well(**because of the data, smile**). 
+
 	
+### 7-NAACL16-Lu Wang-Neural Network-Based Abstract Generation for Opinions and Arguments
+  [PDF](http://www.ccs.neu.edu/home/luwang/papers/NAACL2016.pdf),
+  [Bib](http://www.ccs.neu.edu/home/luwang/papers/NAACL2016.bib)
+  
+
 
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
@@ -203,7 +225,7 @@ more details.
   LSTM Visual Analysis
 
 ## NAACL
-A Neural Network-Based Abstract Generation Method to Opinion Summarization
+<del> A Neural Network-Based Abstract Generation Method to Opinion Summarization
 
 <del> Bayesian Supervised Domain Adaptation for Short Text Similarity
 
@@ -224,3 +246,5 @@ Dependency Sensitive Convolutional Neural Networks for Modeling Sentences and Do
 Learning Distributed Representations of Sentences from Unlabelled Data
 
 Pairwise Word Interaction Modeling with Neural Networks for Semantic Similarity Measurement
+
+Multi-way, Multilingual Neural Machine Translation with a Shared Attention Mechanism    
