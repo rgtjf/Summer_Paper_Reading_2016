@@ -217,12 +217,11 @@ more details.
      - Question4: What is the hyper-parameter K in sub-sampling effect? (Step5)
      - Question5: Is the post-processing needed? (Step6)
      
-     This work comes from deepmind, it presented a neural approach to generate abstractive summaries for opinionated text. Attention-based method is employed to find salient inormation from different input text generate an informative and concise summary. To cope with the large number of input text, an importance-based sampling mechanism is deployed for training.
+   This work comes from deepmind, it presented a neural approach to generate abstractive summaries for opinionated text. Attention-based method is employed to find salient inormation from different input text generate an informative and concise summary. To cope with the large number of input text, an importance-based sampling mechanism is deployed for training.
      
-     This work applies the attention model to abstract generation. I think the motivation to build this model is to employ attention over different input text (different task may have different question to solve, different model to modify, haha)  
-     
-     
-    
+   This work applies the attention model to abstract generation. **I think the motivation to build this model is to employ attention over different input text (different task may have different question to solve, different model to modify, haha)**
+   
+   I like this writting skills and research method, coming from (Bengio, deepmind)
      
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
