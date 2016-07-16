@@ -234,13 +234,50 @@ modify, haha)**
   [PDF](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend),
   [Bib](https://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend/bibtex),
   [Tensorflow](https://github.com/carpedm20/attentive-reader-tensorflow)
+   
+  **What is the guide paper, which will be reseach hot in the future?**
 
+  - [**Problem**]: Large scale training and test datasets have been missing for Reading Comprehension Task (Document, 
+  Question) - (Answer).
+  - [**Data Collection**]: Summary and paraphrase sentences, with their assosiated documents, can be readily converted 
+  to context-query-answer triples using simple entity detection and anonymisation algorithms.
+  - [**Models**]
+  	- Traditional Methods(Benchmark): Symbolic Matching Models.
+  	- Neural Network Models
+  	  ![Deep Learning Reader](figs/8a.png) 
+      - g(d, q) returns a vector embedding of a document and question pair
+      - **The Attentive Reader can be viewed as a generalisation of the application of Memory Networks**, Memory Networks
+      employs an attention mechanism at the sentence level, while this at the tokens level but with entire future and past
+      context.
+      - **Impatient Reader emphasizes on the reread mechanism.** Motivated from " We expect to comprehend deeplier as we 
+      reread once more "
 
+      >  Impatient Reader. This model is really interesting and intuitive, which emphasizes on the reread mechanism. 
+      >  That is to say, for each token in each query, a whole document is read once through. One token, one document. 
+      >  Next token, again this document. That’s what the reread is. I interpret such reread mechanism as a gradual 
+      >  comprehension procedure. When a human being is reading a tough article, s/he will read again and again. 
+      >  We expect to comprehend deeplier as we reread once more. Such motivation, behind this reread mechanism, if any, 
+      >  will make larger impact when predicting beyond a token level output. Therefore, I think this mechanism is 
+      >  worthy of implementing in more tasks.
+  
+  - [**Experiments**]
+    - How difficult is this task? Traditional excellet model, **Danqi Chen [^1] achieve great results with Features**
+    - Traditional Methods versus Neural Models?
+    - Which component contributes to the end performance?
+
+[^1] 3-ACL16-Stanford-A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
+
+### 9-AAAI16-Mueller-Siamese Recurrent Architectures for Learning Sentence Similarity
+  [PDF](http://www.mit.edu/~jonasm/info/MuellerThyagarajan_AAAI16.pdf),
+  Bib
+ 
+  - [**Problem**]
+  
      
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
   [!Bib](~)
-
+ 
 
 # Other Papers:
 
