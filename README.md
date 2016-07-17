@@ -271,9 +271,22 @@ modify, haha)**
   [PDF](http://www.mit.edu/~jonasm/info/MuellerThyagarajan_AAAI16.pdf),
   Bib
  
-  - [**Problem**]
+  **A new top resluts for Relateness on SICK: 0.8822(pearson)**
   
-     
+  - [**Model**]
+    - replace the top softmax layer with l1 norm similarity function
+    - Sentence Representation can capature the following information:
+      - negation, not, no
+      - topic
+      - Entailment classsification 
+    - I think the model is to enforcement the similarity of the two sentences, which is direct and efficient.
+  - [**Experiments TODO**]
+    - replace the top layer
+    - learn how to fine-grain the network.
+    - Read this paper again.
+    - Read the latest related paper from reference.
+
+
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
   [!Bib](~)

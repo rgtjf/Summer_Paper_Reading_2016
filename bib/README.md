@@ -43,3 +43,9 @@ url = {http://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend
   pages     = {927--936},
   url       = {http://www.aclweb.org/anthology/N16-1107}
 }
+
+@inproceedings{mueller2016siamese,
+  title={Siamese Recurrent Architectures for Learning Sentence Similarity},
+  author={Mueller, Jonas and Thyagarajan, Aditya},
+  year={2016}
+}
