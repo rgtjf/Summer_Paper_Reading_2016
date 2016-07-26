@@ -358,7 +358,7 @@ modify, haha)**
 
 　　And when it comes to the second problem, the author tries some tricks. Firstly, he subsampling the frequent words since the vector representations of frequent words do not change significantly. Secondly, he treat phrases as a kind of word to train phrase vectoe, because many phrases have a meaning that is not a simple composition of the meaning of the its individual words.
 
-　　**How to build a model? I think this papers pointed out the right directions.s**
+　　**How to build a model? I think this papers pointed out the right directions.**
 
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf),
