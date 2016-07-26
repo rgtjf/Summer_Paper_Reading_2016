@@ -360,6 +360,34 @@ modify, haha)**
 
 　　**How to build a model? I think this papers pointed out the right directions.**
 
+### 13-ACL16-Yandex-Siamese CBOW: OptimizingWord Embeddings for Sentence Representations
+  [!PDF](),
+  Bib,
+  [Theono](https://bitbucket.org/TomKenter/siamese-cbow)
+  
+  **Siamese CBOW trains word embedding directly for the purpose of being averaged to produce better sentence representation.**
+  
+  **Still, a question need to be answered -- How to select negative samples? random? according to similarity? refer to the code! (Update: Both in word2vec[line 442-446] & Siamese CBOW[line 432-448], random slect negative samples!)**
+ 
+  - [**Model**]
+    - Constructing a supervised training criterion by having our network predict sentences occuring next to each other in the training data, which is similar to **Skip-thought**. 
+  - [**Related Work**]
+    - Word2vec
+    - Skip-thought  
+  - [**Training Set**]
+    - Toronto Book Corpus: 74,004,228 setences; 1,057,070,918 tokens, originating from 7087 unique books.
+    - consider tokens appearing 5 times or more, which leads to a vocabulary of 315,643 words.
+    - http://www.cs.toronto.edu/~mbweb 
+  - [**TODO**]
+    - **replace word2vec in STS with this model***
+ 
+### 14-ACL16-Stanford-A Persona-Based Neural Conversation Model
+
+### 15-ACL16-Stanford-How Much is 131 Million Dollars Putting Numbers in Perspective with Compositional Descriptions
+
+### 16-ICLR16-facebook-SEQUENCE LEVEL TRAINING WITH RECURRENT NEURAL NETWORKS
+
+
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
   [PDF](http://arxiv.org/pdf/1511.04636v5.pdf),
   [!Bib](~)

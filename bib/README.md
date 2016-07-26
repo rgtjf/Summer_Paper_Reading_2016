@@ -86,3 +86,10 @@ url = {http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf}
   journal={arXiv preprint arXiv:1301.3781},
   year={2013}
 }
+
+@inproceedings{kenter2016siamesecbow,
+  title={Siamese CBOW: Optimizing Word Embeddings for Sentence Representations},
+  author={Kenter, Tom and Borisov, Alexey and de Rijke, Maarten},
+  booktitle={Proceedings of the The 54th Annual Meeting of the Association for Computational Linguistics (ACL 2016)},
+  year={2016},
+}

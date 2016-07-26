@@ -11,6 +11,7 @@
 - AAAI 2016 http://www.aaai.org/Conferences/AAAI/2016/aaai16accepted-papers.pdf
 - NIPS ~2015 http://papers.nips.cc/
 - IJCAI 2016 http://ijcai-16.org/index.php/welcome/view/accepted_papers
+- ICLR 2016 http://www.iclr.cc/doku.php?id=iclr2016:main
 - CIKM, ICDE, UAI, SIGIR, KDD
 
 ## SemEval
