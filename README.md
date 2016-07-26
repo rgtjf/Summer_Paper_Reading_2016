@@ -287,8 +287,81 @@ modify, haha)**
     - Read the latest related paper from reference.
 
 
+### 10-NIPS15-Ryan-Skip-Thought Vectors
+  [PDF](http://papers.nips.cc/paper/5950-skip-thought-vectors),
+  [Bib](http://papers.nips.cc/paper/5950-skip-thought-vectors/bibtex),
+  [Review](http://media.nips.cc/nipsbooks/nipspapers/paper_files/nips28/reviews/1826.html)
+  [Theono](https://github.com/ryankiros/skip-thoughts)
+
+  **This paper presented an encoder-decoder model to learn a generic, distributed sentence encoder.**
+  
+  - [**Problem**]: Sentence Representation. Sentence vectors ate extracted and evaluated with linear models on 8 tasks. 
+  - [**Motivation**]: 
+    > In this paper we abstract away from the composition methods themselves and consider an alternative loss function
+    > that can be applied with any composition operator. **(step1 purpose: what we want to do?)** 
+    > 
+    > We consider the following question: is there a task and a corresponding loss that will allow us to learn highly 
+    > generic sentence representations?  **(step2 question: The key problem?)** 
+	>
+	> We give evidence for this by proposing a model for learning high-quality sentence vectors without a particular
+	> supervised task in mind. **(step3 plan1: solution we reject)** 
+	> 
+	> Using word vector learning as inspiration, we propose an objective function that abstracts the skip-gram model to 
+	> the sentence level. That is, instead of using a word to predict its surrounding context, we instead encode a sentence
+	> to predict the sentences around it. Thus, any composition operator can be substituted as a sentence encoder and 
+	> only the objective function becomes modified.  **(step4 our work: step by step, more and more deep)** 
+	> 
+	> Figure 1 illustrate the model. We call our model **skip-thoughts** and vectors induced by our model are called
+	> **skip-thought vectors**. **(step5 Others: Figure or Name)** 
+
+    ![Skip-Thoughts Model](figs/10a.png)
+
+### 11-EMNLP15-Hua He-Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks
+  [PDF](http://aclweb.org/anthology/D/D15/D15-1181.pdf),
+  [Bib](http://aclweb.org/anthology/D/D15/D15-1181.bib)
+
+  **Multi-Perspective: 1). Multiple granularities 2). Window size 3). Multiple types of pooling 4). Similarity Measurement: Multiple distance functions**
+  
+  - [**Remarks**]:
+    - This model tries to explore multi-perspective method on CNNs, so how to combine the local component I think is the key problem in the experiment, and the author proposed **building block** as a set of groups, which make the whole process clear and efficient.
+  - [**Experiments TODO**]   
+    - treat each **Perspective** as **Component** implemented in CNNs.
+    - analysis different combination's efficient
+    - add the thought of **Semantic Similarity** into the **Model**.
+
+### 12-NIPS13-Mikolov-Distributed Representations ofWords and Phrases and their Compositionality
+  [PDF](http://arxiv.org/pdf/1310.4546v1.pdf),
+  Bib
+
+  [ICLR13-Mikolov-Efficient estimation of word representations in vector space](https://arxiv.org/pdf/1301.3781.pdf),
+  Bib
+
+  - [**Problem**] the cost of computing the gradient of the Skip-gram model is proportion to the vocabulary size.
+  - [**Method**]
+   - **Hierachical Softmax**
+     - Build a binary Huffman tree as the representation of the output layer with W words as its leaves, and for each non-leaves, explicitly represents the relative probabilities of its chiald nodes.
+     - reduce to log(W) 
+   - **Negative Sampling**  
+     - Assumption: **A good model should be able to differentiate data  from noise by means of logistic regression**.
+     - replace the objective of nagative sampling, to distingush the target word from draws from the noise distrubution 
+  - [**Others**]
+    - **SubSampling of Frequent Words**
+      - the most frequent words usually provide less information value than the rare words.
+      - discarded with a probability
+    - **Phrases Vector**
+      - replace words to phrases
+      - how to extract phrases? -- words that appear frequently together, and infrequently in other contexts.
+
+　　This two paper proposed the skip-gram model, and tries to solve two aspects problems: 1). How to make it computable? 2). How to make it more semantical? 
+
+　　As to the first problem, the author tries two method, the one is to replace the softmax as hierachical softmax, which reduce the time complexity to log(W), and the other is to replace the objective with negative sampling. 
+
+　　And when it comes to the second problem, the author tries some tricks. Firstly, he subsampling the frequent words since the vector representations of frequent words do not change significantly. Secondly, he treat phrases as a kind of word to train phrase vectoe, because many phrases have a meaning that is not a simple composition of the meaning of the its individual words.
+
+　　**How to build a model? I think this papers pointed out the right directions.s**
+
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
-  [PDF](http://arxiv.org/pdf/1511.04636v5.pdf), 
+  [PDF](http://arxiv.org/pdf/1511.04636v5.pdf),
   [!Bib](~)
  
 

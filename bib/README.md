@@ -49,3 +49,40 @@ url = {http://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend
   author={Mueller, Jonas and Thyagarajan, Aditya},
   year={2016}
 }
+
+@incollection{NIPS2015_5950,
+title = {Skip-Thought Vectors},
+author = {Kiros, Ryan and Zhu, Yukun and Salakhutdinov, Ruslan R and Zemel, Richard and Urtasun, Raquel and Torralba, Antonio and Fidler, Sanja},
+booktitle = {Advances in Neural Information Processing Systems 28},
+editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},
+pages = {3294--3302},
+year = {2015},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf}
+}
+
+@InProceedings{he-gimpel-lin:2015:EMNLP,
+  author    = {He, Hua  and  Gimpel, Kevin  and  Lin, Jimmy},
+  title     = {Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks},
+  booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2015},
+  address   = {Lisbon, Portugal},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1576--1586},
+  url       = {http://aclweb.org/anthology/D15-1181}
+}
+
+@article{mikolov2013distributed,
+  title={Distributed representations of words and phrases and their compositionality},
+  author={Mikolov, T and Dean, J},
+  journal={Advances in neural information processing systems},
+  year={2013}
+}
+
+@article{mikolov2013efficient,
+  title={Efficient estimation of word representations in vector space},
+  author={Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+  journal={arXiv preprint arXiv:1301.3781},
+  year={2013}
+}
