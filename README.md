@@ -361,7 +361,7 @@ modify, haha)**
 　　**How to build a model? I think this papers pointed out the right directions.**
 
 ### 13-ACL16-Yandex-Siamese CBOW: OptimizingWord Embeddings for Sentence Representations
-  [!PDF](),
+  [PDF](https://arxiv.org/abs/1606.04640),
   Bib,
   [Theono](https://bitbucket.org/TomKenter/siamese-cbow)
   
@@ -379,11 +379,35 @@ modify, haha)**
     - consider tokens appearing 5 times or more, which leads to a vocabulary of 315,643 words.
     - http://www.cs.toronto.edu/~mbweb 
   - [**TODO**]
-    - **replace word2vec in STS with this model***
+    - **replace word2vec in STS with this model**
  
 ### 14-ACL16-Stanford-A Persona-Based Neural Conversation Model
+   [PDF](http://arxiv.org/pdf/1603.06155v2.pdf),
+   [!Bib]()
+
+   - [**Problem**]: Inconsisten responses via SEQ2SEQ model.
+     > *message*: How old are you? <br/>
+     > *response*: 16 and you?     <br/>
+     > *message*: What's your age? <br/>
+     > *response*: 18.
+   - [**Model**]
+     - Idea: a). Prior Knowledge, b). User Modeling 
+       - This model represents each individual speaker as a vector or embedding, which encodes speaker-specific information (e.g., dialect, register, age, gender, personal information) that influences the content and style of her response. 
+       - **Speaker Model**: As in standard SEQ2SEQ models, we first encode message S into a vector representation using the source LSTM. Then for each step in the target side, hidden units are obtained by combining the represeantation produced by the target LSTM at the previous time step, the word representations at the current time step, the speaker embedding.
+       - **Speaker-Addressee Model**: replace speaker embedding with an interactive representation by combining two speaker embedding.
+   - [**Remark**]
+     - It is a natural idea to embed our common knowledge or our prior knowledge with a user specific vector representaion and update it throughout the generation process, as human learns from current conversation.
+     - **But what do we learn from our daily conversation?**
+       - knowledge? thinking is more likely to get it.
+       - strength our memory? maybe.
+       - interactive? Interaction between two users' knowledge representaion. **How to model?** 
 
 ### 15-ACL16-Stanford-How Much is 131 Million Dollars Putting Numbers in Perspective with Compositional Descriptions
+  [PDF](http://nlp.stanford.edu/pubs/chaganty2016perspectives.pdf),
+  [!Bib](~)
+
+  **How to represent number?**
+  
 
 ### 16-ICLR16-facebook-SEQUENCE LEVEL TRAINING WITH RECURRENT NEURAL NETWORKS
 
