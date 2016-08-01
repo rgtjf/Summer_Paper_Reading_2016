@@ -385,7 +385,7 @@ modify, haha)**
    [PDF](http://arxiv.org/pdf/1603.06155v2.pdf),
    [!Bib]()
 
-   - [**Problem**]: Inconsisten responses via SEQ2SEQ model.
+   - [**Problem**]: Inconsistent responses via SEQ2SEQ model.
      > *message*: How old are you? <br/>
      > *response*: 16 and you?     <br/>
      > *message*: What's your age? <br/>
@@ -402,12 +402,13 @@ modify, haha)**
        - strength our memory? maybe.
        - interactive? Interaction between two users' knowledge representaion. **How to model?** 
 
-### 15-ACL16-Stanford-How Much is 131 Million Dollars Putting Numbers in Perspective with Compositional Descriptions
+### 15-ACL16-Percy Liang-How Much is 131 Million Dollars Putting Numbers in Perspective with Compositional Descriptions
   [PDF](http://nlp.stanford.edu/pubs/chaganty2016perspectives.pdf),
   [!Bib](~)
 
   **How to represent number?**
   
+  - [**Problem**]: 
 
 ### 16-ICLR16-facebook-SEQUENCE LEVEL TRAINING WITH RECURRENT NEURAL NETWORKS
 
