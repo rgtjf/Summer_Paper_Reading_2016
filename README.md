@@ -329,7 +329,7 @@ modify, haha)**
     - analysis different combination's efficient
     - add the thought of **Semantic Similarity** into the **Model**.
 
-### 12-NIPS13-Mikolov-Distributed Representations ofWords and Phrases and their Compositionality
+### 12-NIPS13-Mikolov-Distributed Representations ofWords and Phrases and their Compositionality<span id="jump">跳转到的地方</span>
   [PDF](http://arxiv.org/pdf/1310.4546v1.pdf),
   Bib
 
@@ -406,12 +406,87 @@ modify, haha)**
   [PDF](http://nlp.stanford.edu/pubs/chaganty2016perspectives.pdf),
   [!Bib](~)
 
-  **How to represent number?**
+  **How to propose a new task?**
+    **i). Introduction: tell us the Situation, Conflict, Question** 
+    **ii). Problem statement**
+    **iii). Dataset construction**
+    **IV). Model**
+    **V). Evaluation and Results**
   
-  - [**Problem**]: 
+  **This work shows how to use crowdworkers to complete a new task. The author is more like a leader of the concert, guide others to complete the fussy task.**
+
+  - [**Problem**]: How much is 131 million Dollars? About the cost to employ every one in Texas over a lunch period
+  - [**Model**]: it consists two steps: formula construction and description generation. 
+    - I). In construction, it composes formulae from numeric facts in a knowledge base and rank the resulting formulas based on familiarity, numeric proximity and semantic compatibility. 
+    - II). In generation, we convert a formula into natural language using a sequence-to-sequence recurrent neural network.
+  - [**Data set**]: I). Collecting the knowledge base. II). Collectiong numetic mentions. III). Generating formulas. IV). Collectiong descriptions of formulas. V). Collecting data on formula preference.
+  - [**Remark**]: How to present number is still a question to answer in NLP. This paper does not directly solve the question, but proposes a new task for how to describe the specific number. Firstly, it constructs some formula. Secondly, it ranks these formulas. Lastly, with sequence-to-sequence model, it transforms the formula to natural language process.
 
 ### 16-ICLR16-facebook-SEQUENCE LEVEL TRAINING WITH RECURRENT NEURAL NETWORKS
+  [PDF](http://arxiv.org/abs/1511.06732),
+  [!Bib](),
+  [Torch](https://github.com/facebookresearch/MIXER)
+  
+  - [**Problem**]: The common approach to solving sequence generation problems is to train the RNN to convert some fixed-size representation of the input into the output sequence, optimizing cross-entropy loss. **There are two main issues with this approach.**
+    -  **cross-entropy is not what the final model is evaluated on**
+    -  **during training, the RNN is fed as input the ground-truth**   
+  - [**Problem-Experiment**]: text summary, machine translation, and image captioning
+  - [**Model**]
+  	- REINFORCE algorithm for back-propagation on computational graphs that output a probability distribution on actions.<br/>
+  	The base idea is, for each example, if the RNN produces a sequence that yields a reward that is better than average, then push the probability distribution to favor what it decided, and vice-versa - if the reward was worse than average, push the distribution to favor less what it had decided.
+  	- feed the output of the RNN into itself during training.<br/>
+  	However, the way this is done is by actually taking the k most-likely outputs from the previous step and passing a weighted combination of them as input to the next.  The authors motivate this by referring beam search, a method used by others to find a most-likely sequence by expanding out most likely possibilities at each token of the sequence.
+  - [**Remark**]: I am still not clear yet, I wil read it again. Questions: i). cross-entropy is also not final STS evaluated on, what I should do? ii). Do these two issues happen in STS task? III). What is the problems of the NN models in STS.
 
+
+### 17-ACL16-Kadlec-Text Understanding with the Attention Sum Reader Network
+  [PDF](http://aclweb.org/anthology/P/P16/P16-1086.pdf)
+  [Bib](http://aclweb.org/anthology/P/P16/P16-1086.bib)
+
+#### Summary of Reading Comprehension task
+
+- [Attentive Reader & Impatient Reader](8-NIPS15-DeepMind-Teaching Machines to Read and Comprehend)
+- [MemNNs](5-NIPS15-  NYU-End-To-End Memory Networks)
+- [Chen et al.(2016)](3-ACL16-Stanford-A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task)
+- [AS Reader](17-ACL16-Kadlec-Text Understanding with the Attention Sum Reader Network)
+
+![17a](figs/17s.png)
+
+  - [**Model**]: This model Attnetion Sum Reader(AS Reader) is tail-made to leverage the fact that the answeris a word from the context document. This is a double-edged sword. While it achives state-of-the-art results on all of the mentioned datasets (where this assumption holds true), it cannot produce an answer which is not contained in the document.
+  
+  This model is inspired by Ptr-Nets ([1-NIPS15-Google-Pointer Network]()) in using an attention mechanism to select the answer in the context rather than blend words from the context into an answer representation.
+
+  - [**Remarks**] state-of-the-art model, ensemble(different hyperparameter)
+  
+
+
+### 18-ACL16-PKU-Compressing Neural Language Models by Sparse Word Representations
+  [PDF](http://www.aclweb.org/anthology/P/P16/P16-1022.pdf),
+  [Bib](http://www.aclweb.org/anthology/P/P16/P16-1022.bib),
+  [keras](https://github.com/chenych11/lm)
+
+  
+  - [**Problem**]: a). Memory-consuming b).neural LMs are unlikely to learn meaningful representations
+  - [**Motivation**]: In a dictionary, an unfamiliar word is typically defined by common words.
+  - [**Model**]:
+    - To learn the sparse codes, "true" embeddings by SkipGram for both common words and rare words. However, these true embeddings are slacked during our language modeling.
+    - Parameter Compression for Embedding Subnet
+    - Parameter Compression for Prediction Subnet -- share the same set of sparse codes to represent word vectoes in Embedding and the output weights in the Prediction Subnet(this is an assumption).
+    - Noise-Contrastive Estimation with ZRegression(not useful)
+  - [**Experiments**]:
+    - Dataset
+    - Qualitative Analysis
+    - Quantitative Analysis (Setting and Performance)
+    - Effect of some component
+  - [**Remark**]: 
+    - This paper is a traditional writting skills, INTRODUCTION(Question, Motivation, Contribution). BACKGROUND. MODEL(several parts). EXPERIMENTS(This part is well written). CONCLUSION.
+    - ^1 is another Sparse Word Vector Representations. It solve an optimization problem to obtain the sparse vector of words as well as a dictionary matrix simulataneously.
+
+  ^1. 18-ACL15-CMU-Sparse Overcomplete Word Vector Representations
+
+### 19-ACL16-IIIT-Together We Stand Siamese Networks for Similar Question Retrieval
+  [PDF](http://www.aclweb.org/anthology/P/P16/P16-1036.pdf),
+  [Bib](http://www.aclweb.org/anthology/P/P16/P16-1036.bib)
 
 
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space

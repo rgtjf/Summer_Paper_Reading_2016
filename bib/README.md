@@ -93,3 +93,39 @@ url = {http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf}
   booktitle={Proceedings of the The 54th Annual Meeting of the Association for Computational Linguistics (ACL 2016)},
   year={2016},
 }
+
+@InProceedings{kadlec-EtAl:2016:P16-1,
+  author    = {Kadlec, Rudolf  and  Schmid, Martin  and  Bajgar, Ond\v{r}ej  and  Kleindienst, Jan},
+  title     = {Text Understanding with the Attention Sum Reader Network},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {908--918},
+  url       = {http://www.aclweb.org/anthology/P16-1086}
+}
+
+@InProceedings{chen-EtAl:2016:P16-11,
+  author    = {Chen, Yunchuan  and  Mou, Lili  and  Xu, Yan  and  Li, Ge  and  Jin, Zhi},
+  title     = {Compressing Neural Language Models by Sparse Word Representations},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {226--235},
+  url       = {http://www.aclweb.org/anthology/P16-1022}
+}
+
+@InProceedings{das-EtAl:2016:P16-1,
+  author    = {Das, Arpita  and  Yenala, Harish  and  Chinnakotla, Manoj  and  Shrivastava, Manish},
+  title     = {Together we stand: Siamese Networks for Similar Question Retrieval},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {378--387},
+  url       = {http://www.aclweb.org/anthology/P16-1036}
+}

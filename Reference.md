@@ -22,3 +22,12 @@
 - Yanran Li, 
   [md](https://raw.githubusercontent.com/niangaotuantuan/niangaotuantuan.github.io/master/_posts/2015/2015-11-30-iclr-2016-submission-highlights.md),
   [blog](http://yanran.li/peppypapers/2015/11/30/iclr-2016-submission-highlights.html)
+
+- shagunsodhani
+  [github](https://github.com/shagunsodhani/papers-I-read)
+
+- karpathy
+  [github](https://github.com/karpathy/paper-notes)
+
+- dennybritz
+  [github](https://github.com/dennybritz/deeplearning-papernotes)
