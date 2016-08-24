@@ -484,9 +484,37 @@ modify, haha)**
 
   ^1. 18-ACL15-CMU-Sparse Overcomplete Word Vector Representations
 
-### 19-ACL16-IIIT-Together We Stand Siamese Networks for Similar Question Retrieval
+### 19-ACL16-IIIT-Together We Stand: Siamese Networks for Similar Question Retrieval
   [PDF](http://www.aclweb.org/anthology/P/P16/P16-1036.pdf),
   [Bib](http://www.aclweb.org/anthology/P/P16/P16-1036.bib)
+  
+  ![SCQA](figs/19a.png)
+
+  - [**Problem**]: Similar Question Retrieval, "lexico-syntactic gap"
+  - [**Model**]: **Siamese Convolutional Neural Network for cQA (SCQA) learns th similarity metric for question-question pairs by leveraging the question-answer pairs available in cQA forum archives.** The idea is to project similar question pairs nearer to each other and dissimilar question pairs farther away from each other in the semantic space.(**Similar to TRANs in Reconmmendation System**). <br/><br/>
+    However, questions pairs is not availabble, so this paper leverages existing question-anwer pairs. Input is word hashing, which is character level representation of documents that takes care of out-of-vocabulary(OOV)words and with minor spelling errors. <br/><br/>
+    The SCQA is used to get question-question pair score, in addition, BM25 metrics was added into with weight  \alpha to improve the retrive performance.
+  -  [**Experiments**]
+    - Quantitative Analysis: Sevaral model compares.
+    - Qualitative Analysis: Compare with each two model to analysis the effect of the model
+  - [**Remark**]
+    - The idea and model is simple, but the result is good and Qualitative Analysis is very meticulous
+
+
+### 20-SemEval16-Hua He-Attention-Based Multi-Perspective Convolutional Neural Networks for Textual Similarity Measurement
+   [PDF](http://aclweb.org/anthology/N/N16/N16-1108.pdf),
+   [Bib](http://aclweb.org/anthology/N/N16/N16-1108.bib)
+   
+   [20-SemEval16-Hua He-Attention-Based Multi-Perspective Convolutional Neural Networks for Textual Similarity Measurement](http://www.aclweb.org/anthology/S/S16/S16-1170.pdf) <br/>
+   [torch](https://github.com/hohoCode/textSimilarityConvNet)
+
+
+### 21-NAACL16-Ke Tran-Recurrent Memory Networks for Language Modeling
+
+
+### 22-NAACL16-USTC-Improve ChineseWord Embeddings by Exploiting Internal Structure
+
+### 
 
 
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
@@ -504,7 +532,7 @@ modify, haha)**
   [PDF](https://arxiv.org/abs/1606.07461),
   [code](http://lstm.seas.harvard.edu/)
   
-  LSTM Visual Analysis
+  LSTM Visual Analysis    
 
 ## NAACL
 <del> A Neural Network-Based Abstract Generation Method to Opinion Summarization
