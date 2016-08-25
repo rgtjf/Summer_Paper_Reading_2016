@@ -508,13 +508,19 @@ modify, haha)**
    [20-SemEval16-Hua He-Attention-Based Multi-Perspective Convolutional Neural Networks for Textual Similarity Measurement](http://www.aclweb.org/anthology/S/S16/S16-1170.pdf) <br/>
    [torch](https://github.com/hohoCode/textSimilarityConvNet)
 
+   ![End-to-end Neural Network](figs/20a.png) 
+
+   - [**Model**] 
+     
+   - [**Remark**]
+
 
 ### 21-NAACL16-Ke Tran-Recurrent Memory Networks for Language Modeling
 
 
 ### 22-NAACL16-USTC-Improve ChineseWord Embeddings by Exploiting Internal Structure
 
-### 
+### 23-NAACL16-Xiaodan Zhu-DAG-Structured Long Short-Term Memory for Semantic Compositionality
 
 
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
@@ -543,7 +549,7 @@ Clustering Paraphrases by Word Sense
 
 Convolutional Neural Networks vs. Convolution Kernels: Feature Engineering for Question Answering
 
-DAG-structured Recurent Neural Networks for Semantic Compositionality
+<del> DAG-structured Recurent Neural Networks for Semantic Compositionality
 
 Deep LSTM based Feature Mapping for Query Classification
 
