@@ -560,11 +560,22 @@ modify, haha)**
 	 | Tai et al. (2015) Dep. LSTM | 0.8676         | 0.8083          | 0.2532
 	 | He et al. (2015)            | 0.8686         | 0.8047          | 0.2606
 	 | He et al. (2016)            | 0.8784         | 0.8199          | 0.2329
-   - [**Remark**]
 
+   - [**Remark**]
+     - from STS work to NAACL
+     - old question, old model, new combination and high performance
+     - **Since combine difference features will imporove the system performance, how to apply this strategy into Neural Networks**
 
 ### 21-NAACL16-Ke Tran-Recurrent Memory Networks for Language Modeling
+  [PDF](http://aclweb.org/anthology/N/N16/N16-1036.pdf),
+  [Bib](http://aclweb.org/anthology/N/N16/N16-1036.bib),
+  [Th](https://github.com/ketranm/RMN)
+  
+  **Recurrent Networks + Memory Networks**
+  ![Recurrent Memory Networks](figs/21a.png)
+  >**A graphical illustration of an unfolded RMR with memory size 4. Dashed line indicates concatenation. The MB takes the output of the bottom LSTM layer and the 4-word history as its input. The output of the MB is then passed to the second LSTM layer on top. There is no direct connection between MBs of different time steps. The last LSTM layer carries the MB’s outputs recurrently.**
 
+  
 
 ### 22-NAACL16-USTC-Improve ChineseWord Embeddings by Exploiting Internal Structure
 

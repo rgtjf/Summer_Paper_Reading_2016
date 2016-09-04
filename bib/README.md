@@ -142,3 +142,15 @@ url = {http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf}
   pages     = {937--948},
   url       = {http://www.aclweb.org/anthology/N16-1108}
 }
+
+@InProceedings{tran-bisazza-monz:2016:N16-1,
+  author    = {Tran, Ke  and  Bisazza, Arianna  and  Monz, Christof},
+  title     = {Recurrent Memory Networks for Language Modeling},
+  booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2016},
+  address   = {San Diego, California},
+  publisher = {Association for Computational Linguistics},
+  pages     = {321--331},
+  url       = {http://www.aclweb.org/anthology/N16-1036}
+}
