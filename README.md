@@ -501,7 +501,7 @@ modify, haha)**
     - The idea and model is simple, but the result is good and Qualitative Analysis is very meticulous
 
 
-### 20-SemEval16-Hua He-Attention-Based Multi-Perspective Convolutional Neural Networks for Textual Similarity Measurement
+### 20-NAACL16-Hua He-PairwiseWord Interaction Modeling with Deep Neural Networks for Semantic Similarity Measurement
    [PDF](http://aclweb.org/anthology/N/N16/N16-1108.pdf),
    [Bib](http://aclweb.org/anthology/N/N16/N16-1108.bib)
    
@@ -511,7 +511,55 @@ modify, haha)**
    ![End-to-end Neural Network](figs/20a.png) 
 
    - [**Model**] 
-     
+     - [**Bi-LSTMs**] for context modeling of input sentences
+     - [**Pairwise word interaction**] encourage direct comparisons between word contexts across sentences
+     - [**Similarity focus layer**] help identify important pairwise word interactions
+     - [**19-layer ConvNet**] converts the similarity measurement problem into similarity measurement
+   - [**Experiment**]
+    | Model                    | train    | trial    | test(r)     | settings
+	|--------------------------|----------|----------|----------|---------
+	| termfreq TF-IDF #w       | 0.479906 | 0.456354 | 0.478802 | ``freq_mode='tf'``
+	| termfreq BM25 #w         | 0.476338 | 0.458441 | 0.474453 | (defaults)
+	| ECNU run1                |          |          | 0.8414   | STS2014 winner
+	| Kiros et al. (2015)      |          |          | 0.8655   | skip-thoughts
+	| Mueller et al. (2016)    |          |          | 0.8822   | MaLSTM; state-of-art
+	|--------------------------|----------|----------|----------|---------
+	| avg                      | 0.722639 | 0.625970 | 0.621415 | (defaults)
+	|                          |±0.035858 |±0.015800 |±0.017411 |
+	| DAN                      | 0.730100 | 0.648327 | 0.641699 | ``inp_e_dropout=0`` ``inp_w_dropout=1/3`` ``deep=2`` ``pact='relu'``
+	|                          |±0.023870 |±0.012275 |±0.015708 |
+	|--------------------------|----------|----------|----------|---------
+	| rnn                      | 0.732334 | 0.684798 | 0.663615 | (defaults)
+	|                          |±0.035202 |±0.016028 |±0.022356 |
+	| cnn                      | 0.923268 | 0.757300 | 0.762184 | (defaults)
+	|                          |±0.028907 |±0.010743 |±0.006005 |
+	| rnncnn                   | 0.940838 | 0.784702 | 0.790240 | (defaults)
+	|                          |±0.012955 |±0.002831 |±0.004763 |
+	| attn1511                 | 0.835484 | 0.732324 | 0.722736 | (defaults)
+	|                          |±0.023749 |±0.011295 |±0.009434 |
+	|--------------------------|----------|----------|----------|---------
+	| rnn                      | 0.946294 | 0.792281 | 0.799129 | Ubuntu transfer learning (``ptscorer=B.dot_ptscorer`` ``pdim=1`` ``inp_e_dropout=0`` ``dropout=0`` ``adapt_ubuntu=False``)
+	|                          |±0.018979 |±0.009483 |±0.009060 |
+	| rnn                      | 0.936499 | 0.787830 | 0.798314 | SNLI transfer learning (``dropout=0`` ``inp_e_dropout=0``)
+	|                          |±0.042884 |±0.007839 |±0.007330 |
+    from https://github.com/brmson/dataset-sts/tree/master/data/sts/sick2014
+    
+     | Model                       | Pearson’s r    | Spearman’s p    | MSE      
+     |-----------------------------|----------------|-----------------|----------
+     | Socher et al. (2014) DTRNN  | 0.7863         | 0.7305          | 0.3983   
+	 | Socher et al. (2014) SDTRNN | 0.7886         | 0.7280          | 0.3859
+	 | Lai and Hockenmaier (2014)  | 0.7993         | 0.7538          | 0.3692
+	 | Jimenez et al. (2014)       | 0.8070         | 0.7489          | 0.3550
+	 | Bjerva et al. (2014)        | 0.8268         | 0.7721          | 0.3224
+	 | Zhao et al. (2014)          | 0.8414         | -               | -
+	 | LSTM                        | 0.8477         | 0.7921          | 0.2949
+	 | Bi-LSTM                     | 0.8522         | 0.7952          | 0.2850
+	 | 2-layer LSTM                | 0.8411         | 0.7849          | 0.2980
+	 | 2-layer Bi-LSTM             | 0.8488         | 0.7926          | 0.2893
+	 | Tai et al. (2015) Const. LSTM|0.8491         | 0.7873          | 0.2852
+	 | Tai et al. (2015) Dep. LSTM | 0.8676         | 0.8083          | 0.2532
+	 | He et al. (2015)            | 0.8686         | 0.8047          | 0.2606
+	 | He et al. (2016)            | 0.8784         | 0.8199          | 0.2329
    - [**Remark**]
 
 
