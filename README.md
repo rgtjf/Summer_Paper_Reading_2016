@@ -575,7 +575,12 @@ modify, haha)**
   ![Recurrent Memory Networks](figs/21a.png)
   >**A graphical illustration of an unfolded RMR with memory size 4. Dashed line indicates concatenation. The MB takes the output of the bottom LSTM layer and the 4-word history as its input. The output of the MB is then passed to the second LSTM layer on top. There is no direct connection between MBs of different time steps. The last LSTM layer carries the MB’s outputs recurrently.**
 
-  
+  - [**Motivation**]
+    The Memory Block (MB) takes the hidden state of the LSTM and compares it to the most recent inputs using an attention mechanism. Thus, analyzing the attention weights of a trained model can give us valuable insight into the information that is retained over time in LSTM. 
+  - [**Experiments**]
+    - **Language Model Experiments**
+    - **Attention Analysis & Syntactic Analysis**
+    - **Sentence Completion Challenge**    
 
 ### 22-NAACL16-USTC-Improve ChineseWord Embeddings by Exploiting Internal Structure
 
