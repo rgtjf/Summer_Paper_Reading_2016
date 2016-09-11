@@ -15,8 +15,7 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 [TOC]
 
 ### 1-NIPS15-Google-Pointer Network
-  [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), 
-  [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
+  [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
 
   - [**Problem-Paper**] the number of target classes depends on the length of input, which is variable.
   - [**Problem-Experiment**] 
@@ -41,8 +40,7 @@ sequence instead of on the number of possible instances in the problem.
 The authors have provided very interesting experimental results on three different discrete optimization problems.
 
 ### 2-ACL16-IBM-Addressing Limited Data for Textual Entailment Across Domains
-  [PDF](https://arxiv.org/pdf/1606.02638v1.pdf),
-  [!Bib](~)
+  [PDF](https://arxiv.org/pdf/1606.02638v1.pdf), [!Bib](~)
 	  	
   - [**Problem-Paper**] exploit unlabled data to improve F-score for TE task. 
   - [**Problem-Experiment**] find all sentences in a corpus that entail a given hypothsis.<br/>
@@ -61,9 +59,7 @@ explore two strategies - self-training and active learning to address the lack o
 detail and convincing.
 
 ### 3-ACL16-Stanford-A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
-  [PDF](https://arxiv.org/abs/1606.02858),
-  [!Bib](~),
-  [!Github](https://github.com/danqi/rc-cnn-dailymail)
+  [PDF](https://arxiv.org/abs/1606.02858), [!Bib](~), [!Github](https://github.com/danqi/rc-cnn-dailymail)
 
   - [**Problem**] CNN/Daily Mail Reading Comprehension Task
   - [**Model**] 
@@ -105,7 +101,7 @@ the correct answer.
   		- Data Set: Yahoo answers
   - [**Model**]
   
-  	![Hierarchical Attention Networks](/figs/4a.png)
+  	![Hierarchical Attention Networks](figs/4a.png)
  
     - (i)  it has a hierarchical structure that mirrors the hierarchical structure of documents; 
     - (ii) it has two levels of attention mechanisms applied at the word and sentence-level, enabling it to attend 
@@ -329,7 +325,7 @@ modify, haha)**
     - analysis different combination's efficient
     - add the thought of **Semantic Similarity** into the **Model**.
 
-### 12-NIPS13-Mikolov-Distributed Representations ofWords and Phrases and their Compositionality<span id="jump">跳转到的地方</span>
+### 12-NIPS13-Mikolov-Distributed Representations ofWords and Phrases and their Compositionality
   [PDF](http://arxiv.org/pdf/1310.4546v1.pdf),
   Bib
 
@@ -460,6 +456,7 @@ modify, haha)**
   
 
 
+
 ### 18-ACL16-PKU-Compressing Neural Language Models by Sparse Word Representations
   [PDF](http://www.aclweb.org/anthology/P/P16/P16-1022.pdf),
   [Bib](http://www.aclweb.org/anthology/P/P16/P16-1022.bib),
@@ -489,6 +486,8 @@ modify, haha)**
   [Bib](http://www.aclweb.org/anthology/P/P16/P16-1036.bib)
   
   ![SCQA](figs/19a.png)
+  > Figure 2: Architecture of SCQA. The network consists of repeating convolution, max pooling and ReLU layers and a fully connected layer. Also the weights W1 to W5 are shared between the sub-networks.
+  
 
   - [**Problem**]: Similar Question Retrieval, "lexico-syntactic gap"
   - [**Model**]: **Siamese Convolutional Neural Network for cQA (SCQA) learns th similarity metric for question-question pairs by leveraging the question-answer pairs available in cQA forum archives.** The idea is to project similar question pairs nearer to each other and dissimilar question pairs farther away from each other in the semantic space.(**Similar to TRANs in Reconmmendation System**). <br/><br/>
@@ -516,7 +515,8 @@ modify, haha)**
      - [**Similarity focus layer**] help identify important pairwise word interactions
      - [**19-layer ConvNet**] converts the similarity measurement problem into similarity measurement
    - [**Experiment**]
-    | Model                    | train    | trial    | test(r)     | settings
+   
+	| Model                    | train    | trial    | test(r)     | settings
 	|--------------------------|----------|----------|----------|---------
 	| termfreq TF-IDF #w       | 0.479906 | 0.456354 | 0.478802 | ``freq_mode='tf'``
 	| termfreq BM25 #w         | 0.476338 | 0.458441 | 0.474453 | (defaults)
@@ -542,24 +542,25 @@ modify, haha)**
 	|                          |±0.018979 |±0.009483 |±0.009060 |
 	| rnn                      | 0.936499 | 0.787830 | 0.798314 | SNLI transfer learning (``dropout=0`` ``inp_e_dropout=0``)
 	|                          |±0.042884 |±0.007839 |±0.007330 |
-    from https://github.com/brmson/dataset-sts/tree/master/data/sts/sick2014
-    
-     | Model                       | Pearson’s r    | Spearman’s p    | MSE      
-     |-----------------------------|----------------|-----------------|----------
-     | Socher et al. (2014) DTRNN  | 0.7863         | 0.7305          | 0.3983   
-	 | Socher et al. (2014) SDTRNN | 0.7886         | 0.7280          | 0.3859
-	 | Lai and Hockenmaier (2014)  | 0.7993         | 0.7538          | 0.3692
-	 | Jimenez et al. (2014)       | 0.8070         | 0.7489          | 0.3550
-	 | Bjerva et al. (2014)        | 0.8268         | 0.7721          | 0.3224
-	 | Zhao et al. (2014)          | 0.8414         | -               | -
-	 | LSTM                        | 0.8477         | 0.7921          | 0.2949
-	 | Bi-LSTM                     | 0.8522         | 0.7952          | 0.2850
-	 | 2-layer LSTM                | 0.8411         | 0.7849          | 0.2980
-	 | 2-layer Bi-LSTM             | 0.8488         | 0.7926          | 0.2893
-	 | Tai et al. (2015) Const. LSTM|0.8491         | 0.7873          | 0.2852
-	 | Tai et al. (2015) Dep. LSTM | 0.8676         | 0.8083          | 0.2532
-	 | He et al. (2015)            | 0.8686         | 0.8047          | 0.2606
-	 | He et al. (2016)            | 0.8784         | 0.8199          | 0.2329
+
+	from https://github.com/brmson/dataset-sts/tree/master/data/sts/sick2014
+	
+	| Model                       | Pearson’s r    | Spearman’s p    | MSE      
+	|-----------------------------|----------------|-----------------|----------
+	| Socher et al. (2014) DTRNN  | 0.7863         | 0.7305          | 0.3983   
+	| Socher et al. (2014) SDTRNN | 0.7886         | 0.7280          | 0.3859
+	| Lai and Hockenmaier (2014)  | 0.7993         | 0.7538          | 0.3692
+	| Jimenez et al. (2014)       | 0.8070         | 0.7489          | 0.3550
+	| Bjerva et al. (2014)        | 0.8268         | 0.7721          | 0.3224
+	| Zhao et al. (2014)          | 0.8414         | -               | -
+	| LSTM                        | 0.8477         | 0.7921          | 0.2949
+	| Bi-LSTM                     | 0.8522         | 0.7952          | 0.2850
+	| 2-layer LSTM                | 0.8411         | 0.7849          | 0.2980
+	| 2-layer Bi-LSTM             | 0.8488         | 0.7926          | 0.2893
+	| Tai et al. (2015) Const. LSTM|0.8491         | 0.7873          | 0.2852
+	| Tai et al. (2015) Dep. LSTM | 0.8676         | 0.8083          | 0.2532
+	| He et al. (2015)            | 0.8686         | 0.8047          | 0.2606
+	| He et al. (2016)            | 0.8784         | 0.8199          | 0.2329
 
    - [**Remark**]
      - from STS work to NAACL
@@ -579,12 +580,51 @@ modify, haha)**
     The Memory Block (MB) takes the hidden state of the LSTM and compares it to the most recent inputs using an attention mechanism. Thus, analyzing the attention weights of a trained model can give us valuable insight into the information that is retained over time in LSTM. 
   - [**Experiments**]
     - **Language Model Experiments**
+      - Perplexities
+      > In natural language processing, perplexity is a way of evaluating language models. A language model is a probability distribution over entire sentences or texts.
+      >
+      > Using the definition of perplexity for a probability model, one might find, for example, that the average sentence xi in the test sample could be coded in 190 bits (i.e., the test sentences had an average log-probability of -190). This would give an enormous model perplexity of 2190 per sentence. However, it is more common to normalize for sentence length and consider only the number of bits per word. Thus, if the test sample's sentences comprised a total of 1,000 words, and could be coded using a total of 7.95 bits per word, one could report a model perplexity of 27.95 = 247 per word. In other words, the model is as confused on test data as if it had to choose uniformly and independently among 247 possibilities for each word.
     - **Attention Analysis & Syntactic Analysis**
+      - Positional and lexical analysis
+      - Syntactic analysis
     - **Sentence Completion Challenge**    
+	  - The Microsoft Research Sentence Completion Challenge (Zweig and Burges, 2012)
+	  - example: The stage lost a fine , even as science lost an acute reasoner , when he became a specialist in crime <br/>
+	    a) linguist b) hunter **c) actor** d) estate e) horseman
 
 ### 22-NAACL16-USTC-Improve ChineseWord Embeddings by Exploiting Internal Structure
+  [PDF](http://aclweb.org/anthology/N/N16/N16-1119.pdf),
+  [Bib](http://aclweb.org/anthology/N/N16/N16-1119.bib),
+  [CWE](https://github.com/Leonard-Xu/CWE),
+  [SCWE](https://github.com/JianXu123/SCWE)
 
-### 23-NAACL16-Xiaodan Zhu-DAG-Structured Long Short-Term Memory for Semantic Compositionality
+
+  - [**Motivation**]
+    - (Problem) Semantic Similarity across component characters in a word was ignored.
+    - (One solution, maybe others solution) Learn semantic contribution of characters to a word **via** the semantic knowledge obtained from other languages.
+    - (Some existing work) motivated by Chen et al.(2015)^1 explots the internal structures of Chinese characters. 
+    - (Our work) Chen et al.(2015) treat each character's equal contrubution to a word, while this work treat differently.
+
+  ![CWE V.S. SCWE](figs/22a.png)
+
+  - [**Contribution**]
+    -  1. (Provide a method) Recongnize semenatically conpositional chinese word.
+    -  2. (Provide a method) How to calculate Sim(,)
+    -  3. **Novel way** to disambiguate Chinese characters with translating resources.
+  - [**Methodology**]
+    -  1. Obtain tranlations of Chinese words and characters
+    -  2. Perform Chinese character sense disambiguation
+    -  3. Learn word and character embedding with our model 
+  - [**Experiment**]     
+    -  1. Word Similarity (**SemEval2017 - Task2**)
+    -  2. Text Classification
+    -  3.1 Does this work solve ambiguilty of Chinese characters?
+    -  3.2 Does this work make semantic effect?
+    -  3.3 How does the parameter effect the performance?
+
+  [^1] Xinxiong Chen, Lei Xu, Zhiyuan Liu, Maosong Sun, and Huanbo Luan. 2015. Joint learning of character and word embeddings. In Proceedings of the 25th International Joint Conference on Artificial Intelligence (IJCAI).
+
+ ### 23-NAACL16-Xiaodan Zhu-DAG-Structured Long Short-Term Memory for Semantic Compositionality
 
 
 ### TD1-ACL16-Microsoft-Deep Reinforcement Learning with a Natural Language Action Space
@@ -627,4 +667,5 @@ Learning Distributed Representations of Sentences from Unlabelled Data
 
 Pairwise Word Interaction Modeling with Neural Networks for Semantic Similarity Measurement
 
-Multi-way, Multilingual Neural Machine Translation with a Shared Attention Mechanism    
+Multi-way, Multilingual Neural Machine Translation with a Shared Attention Mechanism 
+

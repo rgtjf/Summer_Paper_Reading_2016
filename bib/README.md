@@ -154,3 +154,15 @@ url = {http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf}
   pages     = {321--331},
   url       = {http://www.aclweb.org/anthology/N16-1036}
 }
+
+@InProceedings{xu-EtAl:2016:N16-1,
+  author    = {Xu, Jian  and  Liu, Jiawei  and  Zhang, Liangang  and  Li, Zhengyu  and  Chen, Huanhuan},
+  title     = {Improve Chinese Word Embeddings by Exploiting Internal Structure},
+  booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2016},
+  address   = {San Diego, California},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1041--1050},
+  url       = {http://www.aclweb.org/anthology/N16-1119}
+}
