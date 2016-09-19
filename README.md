@@ -15,7 +15,8 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 [TOC]
 
 ### 1-NIPS15-Google-Pointer Network
-  [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
+  [PDF](http://papers.nips.cc/paper/5866-pointer-networks.pdf), 
+  [Bib](https://papers.nips.cc/paper/5866-pointer-networks/bibtex)
 
   - [**Problem-Paper**] the number of target classes depends on the length of input, which is variable.
   - [**Problem-Experiment**] 
@@ -40,7 +41,8 @@ sequence instead of on the number of possible instances in the problem.
 The authors have provided very interesting experimental results on three different discrete optimization problems.
 
 ### 2-ACL16-IBM-Addressing Limited Data for Textual Entailment Across Domains
-  [PDF](https://arxiv.org/pdf/1606.02638v1.pdf), [!Bib](~)
+  [PDF](https://arxiv.org/pdf/1606.02638v1.pdf), 
+  [!Bib](~)
 	  	
   - [**Problem-Paper**] exploit unlabled data to improve F-score for TE task. 
   - [**Problem-Experiment**] find all sentences in a corpus that entail a given hypothsis.<br/>
@@ -59,7 +61,9 @@ explore two strategies - self-training and active learning to address the lack o
 detail and convincing.
 
 ### 3-ACL16-Stanford-A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
-  [PDF](https://arxiv.org/abs/1606.02858), [!Bib](~), [!Github](https://github.com/danqi/rc-cnn-dailymail)
+  [PDF](https://arxiv.org/abs/1606.02858), 
+  [!Bib](~), 
+  [!Github](https://github.com/danqi/rc-cnn-dailymail)
 
   - [**Problem**] CNN/Daily Mail Reading Comprehension Task
   - [**Model**] 
@@ -606,7 +610,8 @@ modify, haha)**
     - (Our work) Chen et al.(2015) treat each character's equal contrubution to a word, while this work treat differently.
 
   ![CWE V.S. SCWE](figs/22a.png)
-
+  <img src="figs/22a.png" width="100" alt="CWE V.S. SCWE" align=center />
+  
   - [**Contribution**]
     -  1. (Provide a method) Recongnize semenatically conpositional chinese word.
     -  2. (Provide a method) How to calculate Sim(,)
